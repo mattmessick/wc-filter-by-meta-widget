@@ -1,4 +1,4 @@
-# Filter by Meta Widget for WooCommerce 2.6.0+
+# Filter by Meta Widget for WooCommerce
 
 Shows postmeta in a widget which lets you narrow down the list of products when viewing product categories.
 

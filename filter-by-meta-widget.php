@@ -25,22 +25,22 @@ if (! in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', 
 }
 
 /**
- * Init Filter by Meta Widget
+ * Init Filter by Meta Widget for WooCommerce
  */
 function filter_by_meta_widget_init()
 {
 
     /**
-     * Register WooCommerce Filter by Meta Widget
+     * Register Filter by Meta Widget for WooCommerce
      */
-    function register_meta_product_filter()
+    function register_filter_by_meta_widget()
     {
         register_widget('Filter_By_Meta_Widget');
     }
-    add_action('widgets_init', 'register_meta_product_filter');
+    add_action('widgets_init', 'register_filter_by_meta_widget');
 
     /**
-     * WooCommerce Filter by Meta Widget
+     * Filter by Meta Widget for WooCommerce
      */
     class Filter_By_Meta_Widget extends WC_Widget
     {

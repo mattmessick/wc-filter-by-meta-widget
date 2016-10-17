@@ -90,13 +90,6 @@ function filter_by_meta_widget_init()
         private static $chosen_filters;
 
         /**
-         * Stores instance.
-         *
-         * @var array
-         */
-        private static $instance;
-
-        /**
          * Constructor.
          */
         public function __construct()

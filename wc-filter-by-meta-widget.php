@@ -9,7 +9,7 @@
  * Developer: Matt Messick
  * Developer URI: http://mattmessick.com/
  *
- * @package Filter_By_Meta_Widget
+ * @package WC_Filter_By_Meta_Widget
  * @author Matt Messick
  */
 
@@ -35,14 +35,14 @@ function filter_by_meta_widget_init()
      */
     function register_filter_by_meta_widget()
     {
-        register_widget('Filter_By_Meta_Widget');
+        register_widget('WC_Filter_By_Meta_Widget');
     }
     add_action('widgets_init', 'register_filter_by_meta_widget');
 
     /**
      * Filter by Meta Widget for WooCommerce
      */
-    class Filter_By_Meta_Widget extends WC_Widget
+    class WC_Filter_By_Meta_Widget extends WC_Widget
     {
         /**
          * Stores filter name.
